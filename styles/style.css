@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 5px solid black;
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ------------------- NAV --------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+nav .three-dot {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5.4375rem 7.5rem 2.6125rem;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.1375rem;
+}
+nav li {
+  list-style: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+nav h2 {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* ----------------- BANNER -------------------- */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: url("../resources/images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-position: 85% 65%;
+  background-size: contain;
+}
+.banner-content {
+  /* margin-top: 5.9375rem; */
+  margin-left: 7.5rem;
+  margin-right: 8.3125rem;
+}
+.banner-img {
+  margin-top: 1.875rem;
+  margin-right: 10.3125rem;
+}
+.banner-content h1 {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 3.25rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.375rem; /* 134.615% */
+}
+.banner-content p {
+  margin-top: 1rem;
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  height: 3.80625rem;
+}
+.banner button {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  padding: 0.625rem 1.5rem;
+  gap: 0.5rem;
+  border-radius: 2.5625rem;
+  background: #e02c6d;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border: 0;
+} /* --------------------------------------------- */
+/* --------------------------------------------- */
+/* -------------- SPONSORS ------------------ */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* -------------- MEDIA QUERY ------------------ */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+@media screen and (max-width: 576px) {
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  /* ------------------- NAV --------------------- */
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  nav li:nth-child(1),
+  li:nth-child(2),
+  li:nth-child(3),
+  li:nth-child(4),
+  li:nth-child(5) {
+    display: none;
+  }
+  nav .three-dot {
+    display: inline;
+  }
+  nav {
+    margin: 2.1875rem 1rem 1.375rem;
+    gap: 3rem;
+  }
+  nav li a {
+    font-size: 1rem;
+  }
+  nav h2 {
+    font-size: 1rem;
+  }
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  /* ----------------- BANNER -------------------- */
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  .banner {
+    flex-direction: column-reverse;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    background-size: 76.38%;
+    text-align: center;
+  }
+  .banner-content {
+    /* margin-top: 5.9375rem; */
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .banner-img {
+    margin: 3.1875rem 0rem 3rem;
+  }
+  .banner-img img {
+    width: 56.1%;
+  }
+  .banner-content h1 {
+    font-size: 1.75rem;
+    line-height: normal;
+  }
+  .banner-content p {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: normal;
+    height: 4.0625rem;
+    padding: 0 1.25rem;
+  }
+  .banner button {
+    font-weight: 500;
+  }
+}
