@@ -110,7 +110,25 @@ nav h2 {
 /* -------------- SPONSORS ------------------ */
 /* --------------------------------------------- */
 /* --------------------------------------------- */
-
+.sponsor {
+  margin: 4.3125rem 10.3125rem 6.25rem;
+}
+.sponsor div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 6.75rem;
+}
+.sponsor hr {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50.38%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
 /* --------------------------------------------- */
 /* --------------------------------------------- */
 /* -------------- MEDIA QUERY ------------------ */
@@ -179,5 +197,21 @@ nav h2 {
   }
   .banner button {
     font-weight: 500;
+  }
+  .sponsor {
+    margin: 3rem 2.625rem 0rem;
+  }
+  .sponsor div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .sponsor div img {
+    width: 16%;
+  }
+  .sponsor hr {
+    display: none;
   }
 }
