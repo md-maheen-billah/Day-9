@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -105,7 +105,8 @@ nav h2 {
   font-weight: 700;
   line-height: normal;
   border: 0;
-} /* --------------------------------------------- */
+}
+/* --------------------------------------------- */
 /* --------------------------------------------- */
 /* -------------- SPONSORS ------------------ */
 /* --------------------------------------------- */
@@ -128,6 +129,98 @@ nav h2 {
     rgba(192, 204, 218, 0.6) 50.38%,
     rgba(192, 204, 218, 0.1) 100%
   );
+}
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+/* -------------- Collection ------------------ */
+/* --------------------------------------------- */
+/* --------------------------------------------- */
+.collection {
+  margin: 6.25rem 12.25rem;
+}
+.collection > h2 {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 4.375rem;
+  text-align: center;
+  margin-bottom: 1.875rem;
+}
+.collection-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.875rem;
+}
+.cards {
+  padding: 1.0625rem 0.8rem;
+  border-radius: 0.3125rem;
+  background: #fff;
+  box-shadow: 0rem 0rem 2.5rem 0rem rgba(0, 0, 0, 0.15);
+}
+.cards img {
+  width: 18.75rem;
+}
+.cards h2 {
+  color: #18191f;
+  font-family: Poppins;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+}
+.cards h3 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 0.375rem;
+}
+
+.cards div p {
+  color: #5e6366;
+  font-family: Roboto;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; /* 157.143% */
+  letter-spacing: 0.00625rem;
+}
+.cards div img {
+  width: 4%;
+}
+.cards div .half-star {
+  width: 4.5%;
+}
+.cards > div {
+  display: flex;
+  align-items: center;
+}
+.cards > p {
+  color: #787885;
+  font-family: Inter;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143%;
+  letter-spacing: 0.01575rem;
+  height: 3.75rem;
+  width: 12rem;
+}
+.collection-see-more {
+  color: rgba(224, 44, 109, 0.87);
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  justify-content: end;
+  margin-top: 3.125rem;
 }
 /* --------------------------------------------- */
 /* --------------------------------------------- */
@@ -198,6 +291,11 @@ nav h2 {
   .banner button {
     font-weight: 500;
   }
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  /* -------------- SPONSORS ------------------ */
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
   .sponsor {
     margin: 3rem 2.625rem 0rem;
   }
@@ -213,5 +311,68 @@ nav h2 {
   }
   .sponsor hr {
     display: none;
+  }
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  /* -------------- Collection ------------------ */
+  /* --------------------------------------------- */
+  /* --------------------------------------------- */
+  .collection {
+    margin: 3.375rem 1rem;
+  }
+  .collection > h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 1.25rem;
+  }
+  .collection-grid {
+    grid-template-columns: repeat(1, 100%);
+    gap: 1.875rem;
+  }
+  .cards img {
+    width: 100%;
+  }
+  .cards h2 {
+    font-weight: 700;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+  .cards h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 150%;
+    margin-top: 0.375rem;
+  }
+  .cards > div {
+    margin-top: 0.32rem;
+    display: flex;
+  }
+  .cards div p {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.375rem; /* 157.143% */
+    letter-spacing: 0.00625rem;
+  }
+
+  .cards > p {
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143%;
+    letter-spacing: 0.01575rem;
+    height: 2.5625rem;
+    width: 12.25rem;
+    margin-top: 0.8125rem;
+  }
+  .collection-see-more {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: end;
+    margin-top: 2rem;
   }
 }
